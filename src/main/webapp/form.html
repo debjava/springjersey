@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Form Page</title>
+</head>
+<body>
+<h1>Upload a File</h1>
+ 
+	<form action="api/upload/image" method="post" enctype="multipart/form-data">
+ 
+	   <p>
+		Select a file : <input type="file" name="file" size="45" />
+	   </p>
+ 
+	   <input type="submit" value="Upload It" />
+	</form>
+	
+	<br>
+	<strong>Multiple Files Upload</strong>
+	<form action="api/upload/multiupload" method="post" enctype="multipart/form-data">
+ 
+	   <p>
+		Select first file : <input type="file" name="file1" >
+	   </p>
+	   
+	   <p>
+		Select second file : <input type="file" name="file2" >
+	   </p>
+	   
+	   <p>
+		Select third file : <input type="file" name="file3" >
+	   </p>
+ 
+	   <input type="submit" value="Upload It" />
+	</form>
+	
+</body>
+</html>
